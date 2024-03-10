@@ -1,4 +1,4 @@
-import { QiitaArticleList } from "./components/qiita_article_list";
+import { QiitaArticleList } from "../components/qiita_article_list";
 
 export default function Home() {
   return (
