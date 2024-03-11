@@ -1,5 +1,11 @@
-import React from "react";
+import { QiitaArticleList } from "@/components/QiitaArticleList";
+import { ZennArticleListWidget } from "@/components/ZennArticleListWidget";
 
 export default function page() {
-  return <div>select articles</div>;
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      {/* <QiitaArticleList /> */}
+      <ZennArticleListWidget />
+    </main>
+  );
 }

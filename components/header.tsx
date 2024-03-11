@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ModeToggle } from "./toggle";
+import { ModeToggle } from "./ui/toggle";
 import Link from "next/link";
 
 export const Header = () => {
