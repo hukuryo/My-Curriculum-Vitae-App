@@ -1,6 +1,7 @@
 export type ArticleProps = {
-  id: string;
+  id: number;
+  path: string;
+  emoji: string;
   title: string;
-  date: string;
-  likes: number;
+  published_at: string;
 };
