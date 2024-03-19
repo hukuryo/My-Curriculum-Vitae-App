@@ -12,8 +12,15 @@ export const Header = () => {
           CURRICULUM VITAE
         </h1>
         <div className="flex items-center gap-5">
-          <Link href="/articles">ARTICLES</Link>
-          <Link href="/career">CAREER</Link>
+          <Link className="hover:opacity-75" href="/qiita">
+            Qiita
+          </Link>
+          <Link className="hover:opacity-75" href="/zenn">
+            Zenn
+          </Link>
+          <Link className="hover:opacity-75" href="/career">
+            CAREER
+          </Link>
           <ModeToggle />
         </div>
       </div>
