@@ -8,9 +8,11 @@ export const Header = () => {
   return (
     <header className="border-b py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-bg-gray-800 text-3xl font-semibold">
-          CURRICULUM VITAE
-        </h1>
+        <Link className="hover:opacity-75" href="/">
+          <h1 className="text-bg-gray-800 text-3xl font-semibold">
+            CURRICULUM VITAE
+          </h1>
+        </Link>
         <div className="flex items-center gap-5">
           <Link className="hover:opacity-75" href="/qiita">
             Qiita
