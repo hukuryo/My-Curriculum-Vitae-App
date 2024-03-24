@@ -16,7 +16,7 @@ export const Header = () => {
             CURRICULUM VITAE
           </h1>
         </Link>
-        <div className="flex-grow flex justify-center items-center gap-5">
+        <div className="flex-grow flex justify-center items-center gap-5 mr-auto">
           <div className="flex gap-8">
             <Link className="hover:opacity-75" href="/qiita">
               Qiita
