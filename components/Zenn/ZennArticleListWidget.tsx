@@ -10,7 +10,8 @@ interface Article {
 
 export const ZennArticleListWidget = async () => {
   const res = await fetch(
-    "https://zenn.dev/api/articles?username=ryohei0509&order=latest"
+    "https://zenn.dev/api/articles?username=ryohei0509&order=latest",
+    { cache: "force-cache" }
   );
   const data = await res.json();
   const articles: Article[] = data.articles;
