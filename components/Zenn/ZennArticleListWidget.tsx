@@ -1,5 +1,7 @@
 import { ZennArticleList } from "./ZennArticleList";
 
+const ZENN_URL: string = process.env.ZENN_URL || "";
+
 interface Article {
   id: number;
   path: string;
@@ -9,10 +11,7 @@ interface Article {
 }
 
 export const ZennArticleListWidget = async () => {
-  const res = await fetch(
-    "https://zenn.dev/api/articles?username=ryohei0509&order=latest",
-    { cache: "force-cache" }
-  );
+  const res = await fetch(ZENN_URL, { cache: "force-cache" });
   const data = await res.json();
   const articles: Article[] = data.articles;
 
