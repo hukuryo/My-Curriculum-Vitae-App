@@ -3,7 +3,11 @@
 import React from "react";
 import { ModeToggle } from "./ui/toggle";
 import Link from "next/link";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import {
+  GitHubLogoIcon,
+  TwitterLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 
 import { Button } from "@/app/components/ui/button";
 
@@ -30,7 +34,29 @@ export const Header = () => {
           </div>
         </div>
         <div className="flex items-center gap-5">
-          <Link className="hover:opacity-75" href="https://github.com/hukuryo">
+          <Link
+            className="hover:opacity-75"
+            href="https://www.linkedin.com/in/%E6%B6%BC%E5%B9%B3-%E7%A6%8F%E5%B3%B6-246383281/"
+            target="_blank"
+          >
+            <Button variant="outline" size="icon">
+              <LinkedInLogoIcon className="h-[1.2rem] w-[1.2rem]" />
+            </Button>
+          </Link>
+          <Link
+            className="hover:opacity-75"
+            href="https://github.com/hukuryo"
+            target="_blank"
+          >
+            <Button variant="outline" size="icon">
+              <TwitterLogoIcon className="h-[1.2rem] w-[1.2rem]" />
+            </Button>
+          </Link>
+          <Link
+            className="hover:opacity-75"
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhukuryo_"
+            target="_blank"
+          >
             <Button variant="outline" size="icon">
               <GitHubLogoIcon className="h-[1.2rem] w-[1.2rem]" />
             </Button>
