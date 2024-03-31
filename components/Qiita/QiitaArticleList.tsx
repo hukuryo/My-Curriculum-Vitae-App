@@ -45,7 +45,7 @@ export const QiitaArticleList = ({
                     </svg>
                   </div>
                   <a
-                    href={article.url}
+                    href={article.path}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-blue-700"
