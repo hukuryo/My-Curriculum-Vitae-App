@@ -1,4 +1,4 @@
-import { ZennArticleListWidget } from "../../components/Zenn/ZennArticleListWidget";
+import { ZennArticleListWidget } from "../../features/Zenn/ZennArticleListWidget";
 
 export default function page() {
   return (

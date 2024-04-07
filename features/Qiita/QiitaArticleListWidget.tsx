@@ -6,7 +6,6 @@ export const QiitaArticleListWidget = async () => {
   const url = `https://qiita.com/api/v2/items?page=1&per_page=100&query=user:${userName}`;
 
   const response = await fetch(url, { cache: "force-cache" });
-  console.log(response);
   const articles = await response.json();
 
   return (
