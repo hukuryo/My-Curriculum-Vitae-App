@@ -19,18 +19,9 @@ export const QiitaArticleList = ({
             >
               <div className="p-6">
                 <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
-                <p className="text-gray-600 mb-4">
-                  {article.rendered_body.slice(0, 100)}...
-                </p>
                 <div className="flex items-center">
-                  <img
-                    src={article.user.profile_image_url}
-                    alt={article.user.id}
-                    className="w-8 h-8 rounded-full mr-2"
-                  />
                   <span className="text-gray-700">
-                    {article.user.id} -{" "}
-                    {new Date(article.created_at).toLocaleDateString()}
+                    {new Date(article.published_at).toLocaleDateString()}
                   </span>
                 </div>
               </div>
@@ -51,10 +42,9 @@ export const QiitaArticleList = ({
                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span className="text-gray-700">{article.likes_count}</span>
                   </div>
                   <Link
-                    href={article.url}
+                    href={article.path}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-500 hover:text-blue-700"
